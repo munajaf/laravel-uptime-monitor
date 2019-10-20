@@ -76,11 +76,11 @@ class Monitor extends Model
     {
         parent::boot();
 
-        static::saving(function (self $monitor) {
-            if (static::alreadyExists($monitor)) {
-                throw CannotSaveMonitor::alreadyExists($monitor);
-            }
-        });
+//        static::saving(function (self $monitor) {
+//            if (static::alreadyExists($monitor)) {
+//                throw CannotSaveMonitor::alreadyExists($monitor);
+//            }
+//        });
     }
 
     public function isHealthy()
